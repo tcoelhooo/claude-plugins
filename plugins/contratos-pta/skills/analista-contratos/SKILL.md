@@ -7,9 +7,15 @@ description: Analista de contratos da PTA via Autentique. Use SEMPRE que o conte
 
 Esta skill é a inteligência para analisar os contratos da PTA na **Autentique** e gerar o **painel de assinaturas**. Você (Claude) executa a análise — conecta na API, agrega os dados e preenche o painel.
 
-## Token
+## Token (faça isto PRIMEIRO, sempre)
 
-O token da Autentique vem da variável de ambiente `CLAUDE_PLUGIN_OPTION_AUTENTIQUE_TOKEN` (configurada na instalação do plugin). Se estiver vazia, peça o token ao usuário ou avise — **nunca invente dados**.
+Antes de qualquer análise, garanta o token da Autentique nesta ordem:
+
+1. Procure nas variáveis de ambiente: `CLAUDE_PLUGIN_OPTION_AUTENTIQUE_TOKEN`, `AUTENTIQUE_TOKEN` ou `AUTENTIQUE_API_KEY`.
+2. **Se nenhuma existir, PERGUNTE ao usuário diretamente no chat:** "Cole aqui o token da API da Autentique para eu acessar os contratos." Use exatamente o valor que ele colar nesta conversa.
+3. Nunca prossiga sem token e **nunca invente dados**.
+
+> Opcional (pra não pedir toda vez): o usuário pode salvar o token como variável de ambiente do sistema chamada `AUTENTIQUE_TOKEN` — no Windows, `setx AUTENTIQUE_TOKEN "o_token"` num terminal, e reabrir o Claude.
 
 ## Como conectar na Autentique
 

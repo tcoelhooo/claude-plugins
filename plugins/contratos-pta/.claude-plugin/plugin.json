@@ -1,7 +1,7 @@
 {
   "name": "contratos-pta",
   "displayName": "Analista de Contratos · PTA",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Varre a Autentique e gera o painel de assinaturas da PTA: controle macro mês a mês, mês atual semana a semana e resumo turma a turma com drill-down dos alunos.",
   "author": {
     "name": "Personal Trainer Academy",

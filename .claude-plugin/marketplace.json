@@ -1,0 +1,17 @@
+{
+  "name": "pta-plugins",
+  "owner": {
+    "name": "Personal Trainer Academy",
+    "email": "financeiro@ptadigital.com.br"
+  },
+  "description": "Plugins internos da PTA para o Claude — integrações e analistas operacionais.",
+  "plugins": [
+    {
+      "name": "contratos-pta",
+      "source": "./plugins/contratos-pta",
+      "description": "Analista de contratos: varre a Autentique e gera o painel de assinaturas (macro mensal, semanal e turma a turma).",
+      "category": "operations",
+      "keywords": ["autentique", "contratos", "assinaturas", "cx", "pta"]
+    }
+  ]
+}

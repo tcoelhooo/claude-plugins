@@ -1,0 +1,20 @@
+{
+  "name": "contratos-pta",
+  "displayName": "Analista de Contratos · PTA",
+  "version": "1.0.0",
+  "description": "Varre a Autentique e gera o painel de assinaturas da PTA: controle macro mês a mês, mês atual semana a semana e resumo turma a turma com drill-down dos alunos.",
+  "author": {
+    "name": "Personal Trainer Academy",
+    "email": "financeiro@ptadigital.com.br"
+  },
+  "keywords": ["autentique", "contratos", "assinaturas", "cx"],
+  "userConfig": {
+    "autentique_token": {
+      "type": "string",
+      "title": "Token da API Autentique",
+      "description": "Sua API key da Autentique (Configurações → API na conta Autentique). Fica guardada cifrada no keychain da sua máquina — nunca vai para o repositório.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
